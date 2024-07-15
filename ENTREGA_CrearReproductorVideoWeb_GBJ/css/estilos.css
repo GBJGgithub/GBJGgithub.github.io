@@ -1,0 +1,135 @@
+	
+	.html_Pricipal {
+		background-image: url("../recursos/fondo_htm_1.jpg");
+		background-size: cover;
+	 
+	}	
+	
+
+	body {
+		height: 500px;
+		background-size: cover;
+		background-repeat:no-repeat;
+		/*background-position: center center;*/
+	}
+
+	h1, h2, p {
+		/*text-align: center;*/
+		color: white ;
+		text-align: center;
+	}	
+	
+	.parafoPersonalizado {
+		color: black ;
+		text-align: left;
+		font-size: 22px;
+	}
+		
+	p_Ini{
+		color: black ;
+		text-align: left ;
+	}	
+	
+	header {
+	  width: 100%;
+	  z-index: 100;
+	}
+	
+	/* ------------------------------------------- */
+	/* -- Estilo para barra ---------------------- */
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #FF5733;
+		font-size: 30px;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background: #eca023;
+	}
+
+	form {
+	  margin-top: 0em;
+	}
+
+	/* -------------------------- */
+	/* -- INI Tablas ------------ */
+	.center_tbl{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	th, td{
+		border:2px solid black;
+	}
+	
+	.tabla_1 {
+		table-layout: fixed;
+		width: 60%;
+		border-collapse: collapse;
+		border: 6px solid purple;
+		background: gray;
+		text-align: center;
+		font-size: 95%;
+		margin-left: auto;
+		margin-right: auto;		
+	}		
+	
+	.tabla_2 {
+		table-layout: fixed;
+		width: 60%;
+		border-collapse: collapse;
+		border: 3px solid purple;
+		background: red;
+		text-align: center;
+		font-size: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+
+	.tabla_3 {
+		table-layout: fixed;
+		margin-left: auto;
+		margin-right: auto;
+		background: #74992e;
+		width: 50%;
+		border-collapse: collapse;
+		border: 6px solid black;
+		font-size: 110%;
+		text-align: right ;
+	}	
+
+	.tbl_etiq_htm {
+		table-layout: fixed;
+		width: 60%;
+		border-collapse: collapse;
+		border: 6px solid red;
+		background: white;
+		text-align: center;
+		font-size: 95%;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+	
+	.tbl_etiq_htm td {
+		color: #333399;
+		background: yellow;
+		color: blue;
+	}
+		
+	/* -- FIN Tablas ------------ */
+	/* -------------------------- */

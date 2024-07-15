@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" class="html_Pricipal">
+  <head>
+    <title>Streaming en la Web - Crear un reproductor de vídeo utilizando estándares web</title>
+	
+	<script type="text/javascript"> 
+		function takeSnapShot() { 
+			var canvasContext = frame.getContext("2d"); 
+			canvasContext.drawImage(media,0,0,480,320); } 
+	</script> 
+	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen">
+	<meta charset = "UTF-8">
+  </head>
+
+  <body>
+	<header>
+		<h1>Trabajo: Crear un reproductor de vídeo utilizando estándares web.</h1>
+		<h2>Alumno: Gerardo Beltrán Juárez.</h2>
+		<h2>Nota: Debido al espacio limitado para subir la practica en el servidor, solo se subio un vídeo, algunos otros son referencias a Youtube.</h2>
+	</header>
+	
+	<main>
+		<br>
+		<table class="tabla_1">
+		  <thead>
+			<tr>
+			  <th>Marca</th>
+			  <th>Descripción</th>
+			  <th>Video</th>
+			</tr>
+		  </thead>
+		  
+		  <tbody>
+			<tr>
+				<th colspan="3" scope="rowgroup">Reproductor de vídeo</th>
+			</tr>
+			<tr> 
+				<td colspan="3">
+				<section id="player"> 
+					<video id="media" width="720" height="480" controls> 
+						<source src="recursos/videos/vdoMuestra.mp4" type="video/mp4"> 
+						<track src="recursos/videos/archivosubtitulos.txt" kind="subtitles" srclang="es" label="Español">
+					</video>
+					<button id="snapShot" onclick="takeSnapShot()">Tamar fotografía</button> 
+					<canvas id="frame" width="720" height="480"></canvas> 
+				</section> 
+				</td>
+			</tr>			
+		  </tbody>
+		  
+		  <tbody>
+			<tr>
+			  <th colspan="3" scope="rowgroup">Motocicletas</th>
+			</tr>
+			<tr>
+			  <td>Harley-Davidson</td>
+			  <td>Harley-Davidson, H-D, o Harley es un fabricante estadounidense de motocicletas fundado en 1903 en Milwaukee Estados Unidos. </td>
+			  <td><video controls autoplay width="270" height="200">
+				<source src="recursos/videos/vdoMuestra.mp4" type="video/mp4"> 
+				<track src="recursos/videos/archivosubtitulos.vtt" kind="subtitles" srclang="es" label="Español">				
+				</video></td> 
+			</tr>
+			<tr>
+			  <td>Yamaha</td>
+			  <td>Yamaha Motor Company, una sección empresarial de Yamaha Corporation dedicada al mundo del motor: fabricación de motocicletas, quads, motonieves, motos de agua, etc.</td>
+			  <td><iframe width="270" height="200" src="https://www.youtube.com/embed/Sz9ZrcU1Tr0?mute=1"></iframe></td>
+			</tr>
+		  </tbody>
+		  <tbody>
+			<tr>
+			  <th colspan="3" scope="rowgroup">Vehículo</th>
+			</tr>
+			<tr>
+			  <td>Ferrari</td>
+			  <td>Ferrari es un fabricante de automóviles superdeportivos con sede en Maranello, provincia de Módena, en la región de Emilia-Romaña, Italia.</td>
+			  <td><iframe width="270" height="200" src="https://www.youtube.com/embed/5RIyf0F9ZPw?mute=1"></iframe></td>
+			</tr>
+		  </tbody>
+		</table>
+	</main>
+	
+	<footer>
+		<p>Nota: Debido al espacio limitado para subir la practica en el servidor, solo se subio un vídeo, algunos otros son referencias a Youtube.</p>
+		<p>¡Gracias por su vista!</p>
+	</footer>	
+	
+  </body>
+</html>
